@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ChoregrapheProject xmlns="http://www.aldebaran-robotics.com/schema/choregraphe/project.xsd" xar_version="3">
+    <Box name="root" id="159" localization="8" tooltip="Enter tooltip here" x="1616" y="3962">
+        <bitmap>media/images/box/box-diagram.png</bitmap>
+        <script language="4">
+            <content>
+                <![CDATA[]]>
+</content>
+        </script>
+        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="ボックス動作の終了時に信号を送る" id="4" />
+        <Timeline enable="1" fps="25" start_frame="1" end_frame="86" size="86">
+            <ActuatorList model="">
+                <ActuatorCurve name="value" actuator="RElbowRoll" recordable="1" mute="0" unit="0">
+                    <Key frame="9" value="66.7" />
+                    <Key frame="23" value="71.2" />
+                    <Key frame="31" value="45.4" />
+                    <Key frame="39" value="71.2" />
+                    <Key frame="47" value="45.4" />
+                    <Key frame="58" value="46.1215" />
+                    <Key frame="83" value="84.6388" />
+                </ActuatorCurve>
+                <ActuatorCurve name="value" actuator="RElbowYaw" recordable="1" mute="0" unit="0">
+                    <Key frame="23" value="102.3" />
+                    <Key frame="39" value="102.3" />
+                    <Key frame="58" value="102.3" />
+                    <Key frame="83" value="6.20701" />
+                </ActuatorCurve>
+                <ActuatorCurve name="value" actuator="RHand" recordable="1" mute="0" unit="1">
+                    <Key frame="23" value="0.7" />
+                    <Key frame="31" value="1" />
+                    <Key frame="39" value="0.7" />
+                    <Key frame="47" value="1" />
+                    <Key frame="58" value="0.991611" />
+                    <Key frame="83" value="0" />
+                </ActuatorCurve>
+                <ActuatorCurve name="value" actuator="RShoulderPitch" recordable="1" mute="0" unit="0">
+                    <Key frame="23" value="27.9" />
+                    <Key frame="39" value="27.9" />
+                    <Key frame="58" value="27.9" />
+                    <Key frame="83" value="81.2851" />
+                </ActuatorCurve>
+                <ActuatorCurve name="value" actuator="RShoulderRoll" recordable="1" mute="0" unit="0">
+                    <Key frame="23" value="-15.8" />
+                    <Key frame="39" value="-15.8" />
+                    <Key frame="58" value="-15.8" />
+                    <Key frame="83" value="-52" />
+                </ActuatorCurve>
+                <ActuatorCurve name="value" actuator="RWristYaw" recordable="1" mute="0" unit="0">
+                    <Key frame="23" value="79.4" />
+                    <Key frame="39" value="79.4" />
+                    <Key frame="58" value="79.4" />
+                    <Key frame="83" value="88.6804" />
+                </ActuatorCurve>
+            </ActuatorList>
+        </Timeline>
+    </Box>
+</ChoregrapheProject>
